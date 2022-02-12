@@ -4,14 +4,14 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 
-name:           testworkHaskell
+name:           exp_work
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/Github username here/testworkHaskell#readme>
-homepage:       https://github.com/Github username here/testworkHaskell#readme
-bug-reports:    https://github.com/Github username here/testworkHaskell/issues
-author:         Author name here
-maintainer:     Author email here
-copyright:      2019 Author name here
+description:    Please see the README on GitHub at <https://github.com/Gurkiii/exp_work#readme>
+homepage:       https://github.com/Gurkiii/exp_work#readme
+bug-reports:    https://github.com/Gurkiii/exp_work/issues
+author:         Gurkiii
+maintainer:     Gurkiii (see linktree for contact info)
+copyright:      2019 Gurkiii
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -21,40 +21,40 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/Github username here/testworkHaskell
+  location: https://github.com/Gurkiii/exp_work
 
 library
   exposed-modules:
       Lib
   other-modules:
-      Paths_testworkHaskell
+      Paths_exp_work
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
   default-language: Haskell2010
 
-executable testworkHaskell-exe
+executable exp_work-exe
   main-is: Main.hs
   other-modules:
-      Paths_testworkHaskell
+      Paths_exp_work
   hs-source-dirs:
       app
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , testworkHaskell
+    , exp_work
   default-language: Haskell2010
 
-test-suite testworkHaskell-test
+test-suite exp_work-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_testworkHaskell
+      Paths_exp_work
   hs-source-dirs:
       test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
-    , testworkHaskell
+    , exp_work
   default-language: Haskell2010
